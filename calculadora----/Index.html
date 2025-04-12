@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI CALCULADORA</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #0000007a;
+            font-family: Arial, sans-serif; /* Fuente de la calculadora */
+            text-align: center;
+        }
+        h1{
+            color: #000000dd;
+        }
+        input[type="text"]{ /* Estilo de la pantalla de la calculadora */
+            width: 200px;
+            height: 30px;
+            font-size: 20px;
+            text-align: right;    /* Alineación del texto a la derecha */
+            margin-bottom: 10px; /* Espacio entre la pantalla y los botones */
+            border: 5px solid #000000dd;
+            border-radius: 10px;
+        }
+        button{ /* Estilo de los botones */
+            width: 50px; /* Ancho de los botones */
+            height: 50px; /* Alto de los botones */
+            font-size: 20px; /* Tamaño de la fuente */
+            margin: 5px;  /* Espacio entre los botones */
+            border: 2px solid #000000dd;
+            border-radius: 10px;  /* Bordes redondeados */
+        }
+        button:hover{    /* Efecto al pasar el mouse por encima del botón */
+            background-color: #000000dd;
+            color: white;
+        }
+        button:active{ /* Efecto de presionar el botón */
+            background-color: #000000dd;
+            color: white;
+            transform: translateY(2px); /* Simula un efecto de presionar el botón */
+        }
+    </style>
+<h1>
+    Calculadora Matematica
+</h1>
+
+<input type="text" name=" " id="pantalla">
+                                                                                <br>
+    <button onclick="mostrar('7')">7    </button>
+    <button onclick="mostrar('8')">8    </button>
+    <button onclick="mostrar('9')">9     </button>
+    <button onclick="mostrar('+')">+     </button>
+                                                                                 <br>
+<button onclick="mostrar('4')">4    </button>
+<button onclick="mostrar('5')">5    </button>
+<button onclick="mostrar('6')">6     </button>
+<button onclick="mostrar('-')">-     </button>
+                                                                                 <br>
+    <button onclick="mostrar('1')">1   </button>
+    <button onclick="mostrar('2')">2   </button>
+    <button onclick="mostrar('3')">3     </button>
+    <button onclick="mostrar('*')">*     </button>
+                                                                                <br>
+<button onclick="mostrar('0')">0    </button>
+<button onclick="eliminar('C')">C    </button>
+<button onclick="calcular('=')">=     </button>
+<button onclick="mostrar('/')">/     </button>
+
+
+
+    <script src="Js.js"></script>
+</body>
+</html>
